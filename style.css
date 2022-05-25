@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: white;
+}
+
+
+.main {
+    height: 785px;
+    background: url(imagens/BR-pt-20220509-popsignuptwoweeks-perspective_alpha_website_medium.jpg) center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main h1 {
+    font-family: Fontes do titulo, sans-serif;
+    font-size: 65px;
+    max-width: 737px;
+    text-align: center;
+}
+
+.gradiente {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*
+
+.frases {
+    text-align: center;
+    color: white;
+    margin-top: 210px;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+img {
+    width: 135px;
+    margin: 20px 49px;
+}
+
+.tv img {
+    width: 500px;
+    position: relative;
+    border-left: auto;
+}
+
+.tv video {
+    width: 350px;
+}
