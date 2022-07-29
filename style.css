@@ -1,73 +1,328 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
+ @font-face {
+     font-family: 'Sublima extra bold';
+     src: url('fontes/Sublima-ExtraBold.otf');
+     font-weight: normal;
+     font-style: normal;
+ }
 
-body {
-    color: white;
-}
+ @font-face {
+     font-family: 'Netflix sans';
+     src: url('fontes/NetflixSans-Regular.otf');
+ }
+
+ @font-face {
+     font-family: Netflix light;
+     src: url(fontes/NetflixSans-Light.otf);
+ }
+
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+
+ .container {
+     max-width: 1130px;
+     margin: 0 auto;
+ }
+
+ .header {
+     position: absolute;
+     z-index: 20;
+ }
+
+ body {
+     color: white;
+     display: block;
+ }
+
+ .main-child {
+     z-index: 1;
+ }
 
 
-.main {
-    height: 785px;
-    background: url(imagens/BR-pt-20220509-popsignuptwoweeks-perspective_alpha_website_medium.jpg) center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
+ .main {
+     height: 757px;
+     width: 100%;
+     background: url(imagens/Br-pt-20220523-popsignuptwoweeks-perspective_alpha_website_medium.jpg) center;
+     background-size: contain;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     background-repeat: no-repeat;
 
-.main h1 {
-    font-family: Fontes do titulo, sans-serif;
-    font-size: 65px;
-    max-width: 737px;
-    text-align: center;
-}
 
-.gradiente {
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+ }
 
-/*
+ .main h1 {
+     max-width: 703px;
+     text-align: center;
+     line-height: 65px;
+     margin: 20px auto;
+ }
 
-.frases {
-    text-align: center;
-    color: white;
-    margin-top: 210px;
+ .subtitulo-1 {
+     font-size: 30px;
+     font-family: 'Sublima extra bold';
+     margin-top: 30px;
+     margin-bottom: 10px;
+     padding: 20px;
+     text-align: center;
+ }
 
-}
+ .form {
+     display: flex;
+     justify-content: center;
+     grid-template-columns: 500px 250px;
+     margin-top: 30px;
+     margin-bottom: 10px;
+ }
 
-h1 {
-    font-size: 50px;
-    font-family: sans-serif;
-}
+ .form input {
+     padding: 20px 10px;
+     font-size: 18px;
+     font-family: sans-serif;
+     width: 450px;
+ }
 
-h2 {
-    font-size: 28px;
-    font-family: sans-serif;
-}
+ .form button {
+     background-color: #e50914;
+     outline: none;
+     border: none;
+     color: white;
+     font-size: 27px;
+     width: 180px;
+     border-left: 1px solid #333;
+ }
 
-h3 {
-    font-size: 18px;
-    font-family: sans-serif;
-}
+ .form button:hover {
+     background: #f6131f;
+ }
 
-img {
-    width: 135px;
-    margin: 20px 49px;
-}
+ .form button .seta-direita {
+     background-image: url(./svgs/seta.svg);
+     width: 10px;
+     height: 20px;
+     display: inline-block;
+     background-repeat: no-repeat;
+ }
 
-.tv img {
-    width: 500px;
-    position: relative;
-    border-left: auto;
-}
+ .main p {
+     font-size: 25px;
+     margin-top: 30px;
+     margin-bottom: 10px;
+     font-family: Netflix sans;
+ }
 
-.tv video {
-    width: 350px;
-}
+ .gradiente {
+     background: rgba(0, 0, 0, 0.4);
+     position: absolute;
+     height: 757px;
+     width: 100%;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(0, 0, 0, .4);
+     background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%), radial-gradient(50% 100%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .7) 100%);
+
+ }
+
+ .header {
+     position: absolute;
+     z-index: 100;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     max-width: 1213px;
+     top: -12px;
+     left: 60px;
+
+
+
+ }
+
+ header img {
+     width: 134px;
+     margin: 53px -3px;
+
+ }
+
+ .header a {
+     display: inline-block;
+     background: #e50914;
+     color: white;
+     align-self: flex-start;
+     padding: 7px 17px;
+     text-decoration: none;
+     margin: 50px -19px;
+     border-radius: 3px;
+     font-family: Netflix light;
+ }
+
+ .header a:hover {
+     background: #f6131f;
+
+ }
+
+ .titulo-1 {
+     font-family: 'Sublima extra bold';
+     font-size: 50px;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ @media screen and (max-width:950px) {
+     .form {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .form input {
+         width: 100%;
+         max-width: 500px;
+         height: 48px;
+         padding: 0px 10px;
+     }
+
+     .form button {
+         margin-top: 15px;
+         font-size: 17px;
+         width: 120px;
+         height: 40px;
+         text-align: center;
+         letter-spacing: .1px;
+         border-radius: 2px;
+     }
+
+     .form button .seta-direita {
+         width: 6px;
+         height: 11px;
+     }
+ }
+
+ .section {
+     font-family: Sublima extra bold;
+     background: black;
+     padding: 70px 50px;
+     border-bottom: 8px solid #222;
+     border-top: 8px solid #222;
+     width: 100%;
+
+ }
+
+ .section h1 {
+     font-size: 50px;
+     line-height: 55px;
+ }
+
+ .section p {
+     font-size: 26px;
+     line-height: 34px;
+     margin-top: 29px;
+
+ }
+
+
+ .card-container {
+     overflow: hidden;
+     position: relative;
+     width: 530px;
+ }
+
+
+ .img-tv {
+     position: relative;
+     z-index: 2;
+     width: 100%;
+ }
+
+ .card-animation {
+     width: 100%;
+     height: 100%;
+     max-width: 73%;
+     max-height: 54%;
+     position: absolute;
+     top: 82px;
+     left: 69px;
+ }
+
+
+ .grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+
+ }
+
+ .img-cel {
+     position: relative;
+     width: 100%;
+     top: -58px;
+ }
+
+
+ .quadrado {
+     position: absolute;
+     width: 322px;
+     height: 92px;
+     background: url(imagens/download-icon.gif) no-repeat black;
+     background-size: 15%;
+     border-radius: 14px;
+     border-bottom: #e50914;
+     top: 213px;
+     left: 108px;
+     border-width: 2px;
+     border-style: solid;
+     border-color: rgba(222, 222, 222, 0.394);
+
+
+ }
+
+ .img-stranger {
+     position: absolute;
+     top: 223px;
+     left: 122px;
+     width: 55px;
+     z-index: 1;
+ }
+
+ .frase-cel {
+     position: absolute;
+     font-size: 16px;
+     font-family: Netflix sans;
+     width: 128px;
+     left: 191px;
+     top: 240px;
+ }
+
+ .img-pc {
+     position: relative;
+     z-index: 1;
+     width: 370px;
+
+ }
+
+ .video-dustin {
+     position: absolute;
+     width: 350px;
+ }
+
+ .botoes-perguntas {
+     padding: 0.8em 2.2em 0.8em 1.2em;
+     margin-bottom: 1px;
+     font-weight: 400;
+     position: relative;
+     width: 100%;
+     border: 0;
+ }
+
+ footer {
+     background: black;
+     width: 100%;
+     height: 400px;
+
+ }

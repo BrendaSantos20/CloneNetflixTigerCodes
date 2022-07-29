@@ -8,74 +8,140 @@
     <title>Netflix Brenda - assistir a séries online, assistir a filmes online.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagens/netflix_logo_icon_170919.png">
-    <style>
-        @font-face {
-            font-family: 'Fontes do titulo';
-            src: url('Fontes/Sublima-ExtraBold.otf');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Fontes pequenas';
-            src: url();
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
 <body>
-    <main class="main">
-        <h1>Filmes, séries e muito mais. Sem limites.</h1>
+
+
+    <header class="header">
+        <img src="imagens/netflix-logo-5.png" alt="Netflix" draggable="false">
+        <a class="button-entrar" hover href="a">Entrar</a>
+    </header>
+
+
+    <main class="main text-center">
+        <div class="main-child">
+
+            <h1 class="titulo-1 ">Filmes, séries e muito mais. Sem limites.</h1>
+
+            <span class="subtitulo-1">Assista onde quiser. Cancele quando quiser.</span>
+
+            <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+
+            <form class="form">
+                <input type="text" placeholder="Email">
+
+                <button>Vamos lá <span class="seta-direita"></span> </button>
+            </form>
+
+        </div>
         <div class="gradiente"></div>
     </main>
 
-    <!-- <div>
-        <img src="imagens/netflix-logo-5.png" alt="">
-    </div>
-    <div class="frases">
-        <div>
-            <h1>Filmes, séries e muito mais. <br> Sem limites.</h1>
-        </div>
-        <div>
-            <h2>Assista onde quiser. Cancele quando quiser.</h2>
-        </div>
-        <div>
-            <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-        </div>
-        <div>
-        </div>
-        <form action=""></form>Vamos lá >
-        <div class="frases-de-baixo">
-            <h1>Assista na TV.</h1>
-            <h2>Assista em Smart TVs, PlayStation, Xbox, <br> Chromecast, Apple TV, aparelhos de Blu-ray e <br> outros
-                dispositivos.
-            </h2>
-        </div>
-        <div>
-            <button>BOTÃO</button>
-        </div>
-        <div class="tv">
-            <img src="imagens/tv.png" alt="Imagem de uma tv">
-            <video src="videos/video-tv-0819.m4v" type="video/mp4"></video>
-        </div>
-        <div>
-            <img src="imagens/dustin.png" alt="">
-            <video src="videos/dustin.m4v"></video>
-            <h1>Assita quando quiser.</h1>
-            <h2>Assista no celular, tablet, Smart TV ou <br> notebook sem pagar a mais por isso.</h2>
-        </div>
-        <div>
-            <img src="imagens/kidsValueProp.png" alt="">
-            <h1>Crie perfis para crianças.</h1>
-            <h2>Deixe as crianças se aventurarem com seus <br> personagens favoritos em um espaço feito só <br> para
-                elas, sem pagar a mais por
-                isso.</h2>
-        </div>
-        <div>
-            <h1>Perguntas frequentes</h1>
-        </div>
-    </div>
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h1>Aproveite na TV.</h1>
+                    <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros
+                        dispositivos.</p>
 
-    -->
+                </div>
+
+                <div class="card-container">
+                    <img class="img-tv" src="imagens/tv.png" alt="Imagem tv">
+                    <div class="card-animation">
+                        <video class="video-tv" autoplay playsinline muted loop>
+                            <source
+                                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+
+                <div class="card-container">
+                    <img class="img-cel" src="imagens/cel.jpg" alt="Imagem cel">
+                    <img class="img-stranger" src="imagens/trangerthings.png" alt="Imagem stranger">
+                    <div class="quadrado-todo">
+                        <div class="quadrado"></div>
+                        <div class="frase-cel">Download em andamento... </div>
+                        <div class="card-animation"></div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h1>Baixe séries para assistir offline.</h1>
+                    <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h1>Assista quando quiser..</h1>
+                    <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+                </div>
+                <div class="card-container">
+                    <img class="img-pc" src="imagens/dustin.png" alt="Imagem pc">
+
+                    <div class="card-animation">
+                        <video class="video-dustin" autoplay playsinline muted loop src="videos/dustin.m4v">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h1>Crie perfis para crianças.</h1>
+                    <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas,
+                        sem pagar a mais por isso.</p>
+                </div>
+                <div class="card-container">
+                    <img class="img-kids" src="imagens/kidsValueProp.png" alt="Imagem kids">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div class="perguntas">
+                    <h1>Perguntas frequentes</h1>
+                    <div class="botoes-perguntas">
+                        <button>O que é a Netflix?</button>
+                    </div>
+                </div>
+            </div>
+    </section>
 </body>
+<footer>
+    <h1>Duvidas
+
+    </h1>
+</footer>
 
 </html>
